@@ -43,3 +43,26 @@ const teamMembers = [
 const imgEl = document.querySelectorAll(".img")
 const infoEL = document.querySelectorAll(".info")
 
+
+
+// Creo ciclo for che mi crea anche la card che verrà inserita nella pagina HTML
+
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+
+
+  const memberCard =
+    <section id="card" class="col-lg-4 col-sm-4 col-md-4 card d-flex flex-row">
+      <section class="w-25 img">
+        <img src="${member.photo}" alt="Nome membro del team"></img>
+      </section>
+      <section class="w-75 d-flex flex-column">
+        <h4>${member.name}</h4>
+        <p>${member.role}</p>
+        <p>${member.email}</p>
+      </section>
+    </section>
+
+
+}
+
