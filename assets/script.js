@@ -68,12 +68,11 @@ const infoEL = document.querySelectorAll(".info")
 
 */
 
-const row = document.getElementById('row')
+const row = document.querySelector('.row')
 
-function card() {
-  `
-
-  <section id="card" class="col-lg-4 col-sm-4 col-md-4 card d-flex flex-row">
+function card(member) {
+  return `
+<section id="card" class="col-lg-4 col-sm-4 col-md-4 card d-flex flex-row">
     <section class="w-25 img">
       <img src="${member.photo}" alt="foto perasona"></img>
     </section>
@@ -84,6 +83,7 @@ function card() {
     </section>
   </section>
   `
+
 }
 
 for (let i = 0; i < teamMembers.length; i++) {
