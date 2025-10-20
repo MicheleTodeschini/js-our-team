@@ -1,3 +1,6 @@
+console.log('funzia');
+
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -36,3 +39,7 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const imgEl = document.querySelectorAll(".img")
+const infoEL = document.querySelectorAll(".info")
+
